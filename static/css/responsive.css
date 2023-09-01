@@ -1,0 +1,133 @@
+/* ========================= */
+/* font imports */
+/* ========================== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;900&display=swap");
+
+/* ========================= */
+/* global variables */
+/* ========================== */
+:root {
+    --white: #fff;
+    --black: #000;
+    --grey: rgba(238, 238, 238, 0.383);
+    --mainTransitions: linear 0.2s;
+}
+
+/* ========================= */
+/* global elements styling
+/* ========================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* =========================== */
+    /* individual elements styling
+      /* =========================== */
+
+    nav {
+        position: relative;
+        padding: .5em 1em;
+    }
+
+    nav ul {
+        display: block;
+        align-items: flex-end;
+        justify-content: end;
+        padding: 1em 0em;
+    }
+
+    nav ul li {
+        padding: 0 0em 1em 2.5em;
+    }
+
+    .showcase-body h1 {
+        font-size: 6em;
+        font-weight: 900;
+    }
+
+    .icons {
+        position: fixed;
+        padding: 0em 0em 0em 2em;
+        z-index: 10;
+    }
+
+    .lined {
+        position: fixed;
+        padding: 1em 2em;
+        z-index: 10;
+    }
+
+    /* second section */
+    section.main {
+        height: max-content;
+        width: 100%;
+        display: block;
+        padding-bottom: 2em;
+    }
+
+    /* carousel */
+    .main .carousel {
+        display: block;
+        align-items: baseline;
+        justify-content: baseline;
+    }
+
+    .main .carousel a {
+        padding: 0em;
+    }
+
+    .main .carousel img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* text */
+    .main .text {
+        text-align: justify;
+        padding: 0em;
+    }
+
+    .main .text p {
+        max-width: 80%;
+        line-height: 2em;
+    }
+
+    /* footer */
+    section.footer {
+        width: 100%;
+        height: max-content;
+    }
+
+    .footer .wrapper {
+        display: block;
+    }
+
+
+    .footer .wrapper .contact {
+        text-align: justify;
+        width: 100;
+    }
+
+    .footer .wrapper .contact h6 {
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    .footer .wrapper .contact p {
+        text-align: justify;
+    }
+
+    .footer .wrapper .contact ul.address-links p {
+        text-align: center;
+    }
+
+
+    /* contact form */
+    .cont-form {
+        height: calc(100vh - 3.25em);
+    }
+}
